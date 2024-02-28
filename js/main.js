@@ -1,13 +1,11 @@
 "use strict";
 
-const getRandomNumber = function (min, max) {
+const getRandomNumber = (min, max) => {
   if (max < min) {
     alert('Max number should be more or equal Min!');
   } else {
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 };
 
-const getMaxStringLength = function (str, length) {
-  return (str.length <= length) ?? false;
-};
+const isStringLengthValidate = (str, length) => str.length <= length;
