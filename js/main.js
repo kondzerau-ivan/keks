@@ -1,11 +1,4 @@
-"use strict";
 
-const getRandomNumber = (min, max) => {
-  if (max < min) {
-    alert('Max number should be more or equal Min!');
-  } else {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-};
+import { photos } from './data.js';
 
-const isStringLengthValidate = (str, length) => str.length <= length;
+console.log(photos);
